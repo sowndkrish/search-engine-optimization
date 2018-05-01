@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="files"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="C:/Users/S/Documents/Eclipse/lucene-6.4.0/lucene-6.4.0/analysis/common/lucene-analyzers-common-6.4.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/S/Documents/Eclipse/lucene-6.4.0/lucene-6.4.0/classification/lucene-classification-6.4.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/S/Documents/Eclipse/lucene-6.4.0/lucene-6.4.0/demo/lucene-demo-6.4.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/S/Documents/Eclipse/lucene-6.4.0/lucene-6.4.0/test-framework/lucene-test-framework-6.4.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/S/Documents/Eclipse/lucene-6.4.0/lucene-6.4.0/suggest/lucene-suggest-6.4.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/S/Documents/Eclipse/lucene-6.4.0/lucene-6.4.0/spatial3d/lucene-spatial3d-6.4.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/S/Documents/Eclipse/lucene-6.4.0/lucene-6.4.0/spatial/lucene-spatial-6.4.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/S/Documents/Eclipse/lucene-6.4.0/lucene-6.4.0/queryparser/lucene-queryparser-6.4.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/S/Documents/Eclipse/lucene-6.4.0/lucene-6.4.0/queries/lucene-queries-6.4.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/S/Documents/Eclipse/lucene-6.4.0/lucene-6.4.0/replicator/lucene-replicator-6.4.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/S/Documents/Eclipse/lucene-6.4.0/lucene-6.4.0/sandbox/lucene-sandbox-6.4.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/S/Documents/Eclipse/lucene-6.4.0/lucene-6.4.0/misc/lucene-misc-6.4.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/S/Documents/Eclipse/lucene-6.4.0/lucene-6.4.0/memory/lucene-memory-6.4.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/S/Documents/Eclipse/lucene-6.4.0/lucene-6.4.0/join/lucene-join-6.4.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/S/Documents/Eclipse/lucene-6.4.0/lucene-6.4.0/highlighter/lucene-highlighter-6.4.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/S/Documents/Eclipse/lucene-6.4.0/lucene-6.4.0/grouping/lucene-grouping-6.4.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/S/Documents/Eclipse/lucene-6.4.0/lucene-6.4.0/facet/lucene-facet-6.4.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/S/Documents/Eclipse/lucene-6.4.0/lucene-6.4.0/expressions/lucene-expressions-6.4.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/S/Documents/Eclipse/lucene-6.4.0/lucene-6.4.0/core/lucene-core-6.4.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/S/Documents/Eclipse/lucene-6.4.0/lucene-6.4.0/codecs/lucene-codecs-6.4.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/S/Documents/Eclipse/lucene-6.4.0/lucene-6.4.0/benchmark/lucene-benchmark-6.4.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/S/Documents/Eclipse/lucene-6.4.0/lucene-6.4.0/backward-codecs/lucene-backward-codecs-6.4.0.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>
