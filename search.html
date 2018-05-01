@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Sowndarya Search Engine</title>
+  
+  
+  
+      <style>
+	  @-webkit-keyframes spincube {
+        from,to {
+            -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+        }
+
+        16% {
+            -webkit-transform: rotateY(-90deg);
+        }
+
+        33% {
+            -webkit-transform: rotateY(-90deg) rotateZ(90deg);
+        }
+
+        50% {
+            -webkit-transform: rotateY(-180deg) rotateZ(90deg);
+        }
+
+        66% {
+            -webkit-transform: rotateY(-270deg) rotateX(90deg);
+        }
+
+        83% {
+            -webkit-transform: rotateX(90deg);
+        }
+    }
+
+    @keyframes spincube {
+        from,to {
+            -moz-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+            -ms-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+            transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+        }
+
+        16% {
+            -moz-transform: rotateY(-90deg);
+            -ms-transform: rotateY(-90deg);
+            transform: rotateY(-90deg);
+        }
+
+        33% {
+            -moz-transform: rotateY(-90deg) rotateZ(90deg);
+            -ms-transform: rotateY(-90deg) rotateZ(90deg);
+            transform: rotateY(-90deg) rotateZ(90deg);
+        }
+
+        50% {
+            -moz-transform: rotateY(-180deg) rotateZ(90deg);
+            -ms-transform: rotateY(-180deg) rotateZ(90deg);
+            transform: rotateY(-180deg) rotateZ(90deg);
+        }
+
+        66% {
+            -moz-transform: rotateY(-270deg) rotateX(90deg);
+            -ms-transform: rotateY(-270deg) rotateX(90deg);
+            transform: rotateY(-270deg) rotateX(90deg);
+        }
+
+        83% {
+            -moz-transform: rotateX(90deg);
+            -ms-transform: rotateX(90deg);
+            transform: rotateX(90deg);
+        }
+    }
+
+    .cubespinner {
+        -webkit-animation-name: spincube;
+        -webkit-animation-timing-function: ease-in-out;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-duration: 12s;
+        animation-name: spincube;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-duration: 12s;
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-transform-origin: 60px 60px 0;
+        -moz-transform-origin: 60px 60px 0;
+        -ms-transform-origin: 60px 60px 0;
+        transform-origin: 60px 60px 0;
+    }
+
+        .cubespinner div {
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            border: 1px solid #ccc;
+            background: rgba(255,255,255,0.8);
+            box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
+            line-height: 120px;
+            text-align: center;
+            font-size: 100px;
+        }
+
+        .cubespinner .face1 {
+            -webkit-transform: translateZ(60px);
+            -moz-transform: translateZ(60px);
+            -ms-transform: translateZ(60px);
+            transform: translateZ(60px);
+        }
+
+        .cubespinner .face2 {
+            -webkit-transform: rotateY(90deg) translateZ(60px);
+            -moz-transform: rotateY(90deg) translateZ(60px);
+            -ms-transform: rotateY(90deg) translateZ(60px);
+            transform: rotateY(90deg) translateZ(60px);
+        }
+
+        .cubespinner .face3 {
+            -webkit-transform: rotateY(90deg) rotateX(90deg) translateZ(60px);
+            -moz-transform: rotateY(90deg) rotateX(90deg) translateZ(60px);
+            -ms-transform: rotateY(90deg) rotateX(90deg) translateZ(60px);
+            transform: rotateY(90deg) rotateX(90deg) translateZ(60px);
+        }
+
+        .cubespinner .face4 {
+            -webkit-transform: rotateY(180deg) rotateZ(90deg) translateZ(60px);
+            -moz-transform: rotateY(180deg) rotateZ(90deg) translateZ(60px);
+            -ms-transform: rotateY(180deg) rotateZ(90deg) translateZ(60px);
+            transform: rotateY(180deg) rotateZ(90deg) translateZ(60px);
+        }
+
+        .cubespinner .face5 {
+            -webkit-transform: rotateY(-90deg) rotateZ(90deg) translateZ(60px);
+            -moz-transform: rotateY(-90deg) rotateZ(90deg) translateZ(60px);
+            -ms-transform: rotateY(-90deg) rotateZ(90deg) translateZ(60px);
+            transform: rotateY(-90deg) rotateZ(90deg) translateZ(60px);
+        }
+
+        .cubespinner .face6 {
+            -webkit-transform: rotateX(-90deg) translateZ(60px);
+            -moz-transform: rotateX(-90deg) translateZ(60px);
+            -ms-transform: rotateX(-90deg) translateZ(60px);
+            transform: rotateX(-90deg) translateZ(60px);
+        }  
+	  
+      @import url(http://fonts.googleapis.com/css?family=Exo:100,200,400);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
+
+body{
+	margin: 0;
+	padding: 0;
+	background: green;
+
+	color: #fff;
+	font-family: Arial;
+	font-size: 12px;
+}
+
+
+
+.grad{
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	right: -40px;
+	bottom: -40px;
+	width: auto;
+	height: auto;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65))); /* Chrome,Safari4+ */
+	z-index: 1;
+	opacity: 0.7;
+}
+
+.header{
+	position: absolute;
+	top: calc(50% - 35px);
+	left: calc(50% - 255px);
+	z-index: 2;
+}
+
+.header div{
+	float: left;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 35px;
+	font-weight: 200;
+}
+
+.header div span{
+	color: #5379fa !important;
+}
+
+
+.search{
+	position: absolute;
+	top: calc(50% - 75px);
+	left: calc(50% - 50px);
+	height: 150px;
+	width: 350px;
+	padding: 10px;
+	z-index: 2;
+}
+
+.search input[type=text]{
+	width: 250px;
+	height: 30px;
+	background: transparent;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 2px;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+}
+
+
+.search input[type=button]{
+	width: 260px;
+	height: 35px;
+	background: #fff;
+	border: 1px solid #fff;
+	cursor: pointer;
+	border-radius: 2px;
+	color: #a18d6c;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 6px;
+	margin-top: 10px;
+}
+
+.search input[type=button]:hover{
+	opacity: 0.8;
+}
+
+.search input[type=button]:active{
+	opacity: 0.6;
+}
+
+.search input[type=text]:focus{
+	outline: none;
+	border: 1px solid rgba(255,255,255,0.9);
+}
+
+
+.search input[type=button]:focus{
+	outline: none;
+}
+
+::-webkit-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
+
+::-moz-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
+    </style>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+
+<body>
+<form>
+ <header>
+
+            <div class="navbar navbar-default navbar-static-top">
+                <div class="stage" style="width: 100px; height: 100px; position:fixed; margin-top:-40px;">
+                    <div class="cubespinner">
+                        <div class="face1"><img src="img/logo1.jpg" style="width: 100px; height: 100px;"></div>
+                        <div class="face2"><img src="img/logo1.jpg" style="width: 100px; height: 100px;"></div>
+                        <div class="face3"><img src="img/logo1.jpg" style="width: 100px; height: 100px;"></div>
+                        <div class="face4"><img src="img/logo1.jpg" style="width: 100px; height: 100px;"></div>
+                        <div class="face5"><img src="img/logo1.jpg" style="width: 100px; height: 100px;"></div>
+                        <div class="face6"><img src="img/logo1.jpg" style="width: 100px; height: 100px;"></div>
+                    </div>
+                </div>
+                <center><h1>Information Retrieval Systems</h1></center>
+            </div>
+        </header>
+  <div class="body"></div>
+
+		<div class="header">
+			<div>Search<span>Engine</span></div>
+		</div>
+		<br>
+		<div class="search">
+				<input type="text" placeholder="Enter your search text" name="search"><br>
+				<input type="button" value="Search">
+				<p> Your </p>
+		</div>
+		</form>
+
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+  
+</body>
+</html>
